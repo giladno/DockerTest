@@ -1,0 +1,27 @@
+{
+  "name": "dockertest",
+  "version": "1.0.0",
+  "description": "A test repository for a dockerized node app",
+  "main": "server.js",
+  "scripts": {
+    "start": "$(npm bin)/pm2-docker server.js",
+    "test": "$(npm bin)/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giladno/DockerTest.git"
+  },
+  "author": "Gilad Novik <gilad@novik.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giladno/DockerTest/issues"
+  },
+  "homepage": "https://github.com/giladno/DockerTest#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "pm2": "^2.9.1"
+  }
+}
